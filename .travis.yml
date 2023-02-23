@@ -1,0 +1,6 @@
+sudo: requuired 
+services:
+  -docker
+
+before_install:
+  - docker build -t matanmagen/docker-react -f Dockerfile.dev . 
